@@ -1,0 +1,40 @@
+.mt-20{
+  margin-top: 20px;
+}
+
+.companyLogo{
+  height: 50px;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #86bb46;
+}
+
+.nav-link.active {
+  font-weight: 500;
+  color: #ff9500 !important;
+}
+
+.alert-footer {
+  color: #155724;
+  background-color: cornsilk;
+  border-color: #c3e6cb;
+  padding: 10px 0px;
+  margin-bottom: 0px !important;
+}
+
+.backTop {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  font-size:xx-large;
+}
+
+.backTop a{
+  cursor: pointer;
+}
+
+.bg-light{
+    background-color: cornsilk !important;
+}

@@ -1,0 +1,1 @@
+$(window).scroll((function(){const o=$("header")[0];$("nav").toggleClass("fixed-top",$(this).scrollTop()>o.clientHeight),$("p.backTop").toggleClass("show",$(this).scrollTop()>300)}));

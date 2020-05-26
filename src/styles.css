@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+.hide {
+    display:none;
+}
+
+.show {
+    display:block;
+}
+
+.page-header{
+    margin-bottom: 30px;
+}
+
+.section-header {
+    color: #86bb46;
+    text-transform: uppercase;
+}
+
+.fixed-top{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #ff9500 !important;
+    border-color: #ff9500 !important;
+}
+
+.carousel-caption {
+    bottom: auto;
+    z-index: 10;
+    top: 200px;
+    color: #ff9500
+}
+
+.page-title {
+    top: 250px !important;
+}
+
+.featurette-divider{
+    margin: 30px 0px;
+}
