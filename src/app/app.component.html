@@ -1,44 +1,46 @@
 <header>
-  <div class="container">
-    <img src="assets/img/header-image-logo.jpg" style="width: 100%;">
-  </div>
+    <div class="container">
+        <a routerLink="/">
+            <img src="assets/img/logo-header.jpg" style="width: 100%;">
+        </a>
+    </div>
 </header>
 <nav class="navbar navbar-expand-md navbar-light bg-light">
-  <div class="container">
-    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item ">
-          <a class="nav-link" routerLink="/">
-            Home
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/aboutus" routerLinkActive="active">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/contactus" routerLinkActive="active">Contact Us</a>
-        </li>
-        <li *ngIf="!user" class="nav-item">
-          <a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a>
-        </li>
-        <li *ngIf="user" class="nav-item">
-            <a class="nav-link" (click)="logout()" routerLinkActive="active">Logout</a>
-        </li>
-      </ul>
+    <div class="container">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" routerLink="/">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/aboutus" routerLinkActive="active">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/contactus" routerLinkActive="active">Contact Us</a>
+                </li>
+                <li *ngIf="!user" class="nav-item">
+                    <a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a>
+                </li>
+                <li *ngIf="user" class="nav-item">
+                    <a class="nav-link" (click)="logout()" routerLinkActive="active">Logout</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 
 <router-outlet (activate)="onActivate()"></router-outlet>
 
 <footer>
-  <div class="alert-footer">
-    <!-- <div class="container">
+    <div class="alert-footer">
+        <!-- <div class="container">
       Get connected with us on social networks!
       <span class="socialIcons">
         <a href="https://www.facebook.com/" target="_blank"><i style="color:#ff9500" class="fab fa-facebook-f"></i></a>
@@ -47,45 +49,45 @@
         <a href="https://www.linkedin.com/" target="_blank"><i style="color:#ff9500" class="fab fa-linkedin-in"></i></a>
       </span>
     </div> -->
-  </div>
-  <div class="container mt-20">
-    <div class="row content">
-      <div class="col-md-4">
-        <p>
-          <strong>Important Links</strong>
-          <br><a class="text-dark" href="https://www.dvet.gov.in">DVET</a>
-          <br><a class="text-dark" href="https://dgt.gov.in">DGT</a>
-          <br><a class="text-dark" href="https://amravati.dvet.gov.in">Amravati DVET</a>
-          <br><a class="text-dark" href="http://www.naac.gov.in">NAAC</a>
-        </p>
-      </div>
-      <div class="col-md-4">
-        <p>
-          <strong>Website Links</strong>
-          <br><a class="text-dark" routerLink="/">Home</a>
-          <br><a class="text-dark" routerLink="/aboutus">About Us</a>
-          <br><a class="text-dark" routerLink="/contactus">Contact Us</a>
-          <br>
-          <br><strong>Feedback</strong>
-          <br>Please send us your ideas, bug reports, suggestions! Any feedback would be appreciated.
-        </p>
-      </div>
-      <div class="col-md-4">
-        <p> <strong>Get In Touch</strong>
-          <br>Shahu Nagar, Near Palna Ghar
-          <br>Sagwan Road, Buldhana 443001
-          <br>
-          <br><i style="color:#ed6448" class="fa fa-envelope"></i>&nbsp; rsce_engg@rediffmail.com
-          <br><i style="color:#ed6448" class="fa fa-phone-alt"></i>&nbsp;  07262 242834
-          <br>&nbsp;<i style="color:#ed6448" class="fa fa-mobile-alt"></i>&nbsp;&nbsp; 942125775/9423416116
-        </p>
-      </div>
     </div>
-  </div>
+    <div class="container mt-20">
+        <div class="row content">
+            <div class="col-md-4">
+                <p>
+                    <strong>Important Links</strong>
+                    <br><a class="text-dark" href="https://www.dvet.gov.in">DVET</a>
+                    <br><a class="text-dark" href="https://dgt.gov.in">DGT</a>
+                    <br><a class="text-dark" href="https://amravati.dvet.gov.in">Amravati DVET</a>
+                    <br><a class="text-dark" href="http://www.naac.gov.in">NAAC</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p>
+                    <strong>Website Links</strong>
+                    <br><a class="text-dark" routerLink="/">Home</a>
+                    <br><a class="text-dark" routerLink="/aboutus">About Us</a>
+                    <br><a class="text-dark" routerLink="/contactus">Contact Us</a>
+                    <br>
+                    <br><strong>Feedback</strong>
+                    <br>Please send us your ideas, bug reports, suggestions! Any feedback would be appreciated.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p> <strong>Get In Touch</strong>
+                    <br>Shahu Nagar, Near Palna Ghar
+                    <br>Sagwan Road, Buldhana 443001
+                    <br>
+                    <br><i style="color:#ed6448" class="fa fa-envelope"></i>&nbsp; rspitib@gmail.com
+                    <br><i style="color:#ed6448" class="fa fa-phone-alt"></i>&nbsp; 07262 242834
+                    <br>&nbsp;<i style="color:#ed6448" class="fa fa-mobile-alt"></i>&nbsp;&nbsp; 942125775/9423416116
+                </p>
+            </div>
+        </div>
+    </div>
 
-  <p class="float-right backTop hide"><a (click)="gotoTop()"><i style="color:#ed6448"
-        class="fa fa-arrow-circle-up"></i></a></p>
-  <p class="alert-footer text-center">&copy;Copyright 2020 Rajarshi Shahu College of ITI |
-    <a href="#"> Developed By ND</a>
-  </p>
+    <p class="float-right backTop hide"><a (click)="gotoTop()"><i style="color:#ed6448"
+                class="fa fa-arrow-circle-up"></i></a></p>
+    <p class="alert-footer text-center">&copy;Copyright 2020 Rajarshi Shahu College of ITI |
+        <a href="#"> Developed By ND</a>
+    </p>
 </footer>
